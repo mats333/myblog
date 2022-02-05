@@ -205,7 +205,21 @@ footer .footer-area {
   padding: 10px 0 40px 0;
 }
 
-.footer-about-link li {
+.arrows li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.arrows li:before {
+  content: "";
+  position: absolute;
+  top: 0.35em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #333;
 }
 
 .footer-menu li {
