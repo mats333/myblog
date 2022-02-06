@@ -93,6 +93,7 @@ main-area
   display: flex;
   justify-content: center;
   padding: 0 10px;
+  margin-bottom: 100px;
 }
 
 /*-------------------------------------------
@@ -173,11 +174,16 @@ aside {
   padding: 20px;
 }
 
+.archive li:first-child {
+  border-top: 1px solid;
+}
+
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
 footer {
   background-color: #f7f7f7;
+  padding: 30px 10px 10px 10px;
 }
 
 footer .footer-area {
@@ -197,7 +203,6 @@ footer .footer-area {
 
 .footer-item h2 {
   font-size: 1.2rem;
-  text-align: center;
   padding: 15px 0 20px 0;
 }
 
@@ -207,26 +212,33 @@ footer .footer-area {
 
 .arrows li {
   position: relative;
-  padding-left: 10px;
+  padding-left: 12px;
+  padding-bottom: 10px;
 }
 
 .arrows li:before {
   content: "";
   position: absolute;
-  top: 0.35em;
+  top: 0;
   left: 0;
   width: 0;
   height: 0;
-  border-width: 5px;
+  border-width: 7px;
   border-style: solid;
   border-color: transparent transparent transparent #333;
 }
 
 .footer-menu li {
   border-bottom: 1px solid;
-  padding: 20px;
+  padding: 15px;
 }
+
+.footer-menu li:first-child {
+  border-top: 1px solid;
+}
+
 .footer-text {
   text-align: center;
   padding-top: 20px;
+  font-size: 0.8rem;
 }
