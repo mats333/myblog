@@ -32,13 +32,20 @@ h2 {
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
+header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
 .title-area .container {
   padding: 20px 16px;
 }
 
 .nav-area {
   background-color: #333;
-  margin-bottom: 30px;
   padding: 13px 16px;
 }
 
@@ -59,7 +66,7 @@ pickup
 .pickup-area {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 150px 10px 0 10px;
   margin-bottom: 30px;
 }
 .pickup-area .item {
