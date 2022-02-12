@@ -261,14 +261,30 @@ footer .footer-area {
 /* 768pxまでの幅に適応される */
 
 @media screen and (max-width: 768px) {
+  .nav-area ul {
+    flex-direction: column;
+  }
+
+  .nav-area li {
+    padding: 0 0 5px 0;
+  }
+
+  .nav-area li:not(:first-child) {
+    padding-left: 0;
+  }
+
   .pickup-area {
     flex-direction: column;
-    /* justify-content: space-between;
-    padding: 150px 10px 0 10px;
-    margin-bottom: 30px; */
+    padding: 210px 10px 50px 10px;
+    /* margin-bottom: 30px; */
   }
+
   .pickup-area article {
     width: 100%;
+  }
+
+  .pickup-area .item {
+    padding: 0 0 20px 0;
   }
 
   .main-area {
@@ -277,12 +293,12 @@ footer .footer-area {
 
   main {
     width: 100%;
-    /* padding: 10px; */
+    padding: 0 0 50px 0;
   }
 
   aside {
     width: 100%;
-    /* padding: 20px; */
+    padding: 0px;
   }
 
   .footer-area {
