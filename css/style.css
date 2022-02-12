@@ -249,3 +249,53 @@ footer .footer-area {
   padding-top: 20px;
   font-size: 0.8rem;
 }
+
+/*-------------------------------------------
+メディアクエリ
+-------------------------------------------*/
+/* 1024pxまでの幅に適応される */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* 768pxまでの幅に適応される */
+
+@media screen and (max-width: 768px) {
+  .pickup-area {
+    flex-direction: column;
+    /* justify-content: space-between;
+    padding: 150px 10px 0 10px;
+    margin-bottom: 30px; */
+  }
+  .pickup-area article {
+    width: 100%;
+  }
+
+  .main-area {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    /* padding: 10px; */
+  }
+
+  aside {
+    width: 100%;
+    /* padding: 20px; */
+  }
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .footer-item:not(:first-child) {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+/* 480pxまでの幅に適応される */
+
+@media screen and (max-width: 480px) {
+}
